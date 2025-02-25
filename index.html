@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="src/output.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+</head>
+
+<body
+  class="font-dm-sans bg-gradient-to-br via-[#0E0D10] from-[#0E0D10] to-[#121216] text-white grid justify-center items-center min-h-screen">
+  <div class="grid grid-cols-1 justify-center md:grid-cols-2 md:w-[900px] [0_4px_4px_rgba(0,0,0,0.25)]">
+    <div class="bg-[#070709] p-6 sm:p-12 max-md:rounded-xl md:rounded-tl-xl md:rounded-bl-xl">
+      <h1 class="text-2xl sm:text-5xl text-gray-200 font-bold flex items-end gap-0.5 mb-7 sm:mb-14">
+        Faça seu login
+        <span
+          class="bg-gradient-to-tr from-[#4158D0] via-[#C850C0] to-[#FFCC70] text-transparent bg-clip-text text-7xl">.</span>
+      </h1>
+      <form class="max-md:rounded-xl md:rounded-tl-xl md:rounded-bl-xl" method="post">
+        <div class="mb-6 grid gap-2">
+          <label for="email" class="text-sm font-normal text-gray-400">Email</label>
+          <div class="input-wrapper rounded-xl">
+            <input type="email" id="nome" class="p-3 w-full rounded-xl focus:outline-none bg-[#111112]" />
+          </div>
+        </div>
+        <div class="mb-6 grid gap-2">
+          <label for="email" class="text-sm font-normal text-gray-400">Senha</label>
+          <div class="input-wrapper rounded-xl">
+            <input type="password" id="nome" class="p-3 w-full rounded-xl focus:outline-none bg-[#111112]" />
+          </div>
+          <a href="#" class="link">Esqueci minha senha</a>
+        </div>
+        <a href="#" class="btn">Entrar</a>
+      </form>
+      <a href="" class="link flex justify-center pt-6">Ainda não tenho uma conta</a>
+    </div>
+    <div class="hidden md:block rounded-tr-xl rounded-br-xl">
+      <img src="./src/bg.svg" class="h-full object-cover rounded-tr-xl rounded-br-xl" alt="Imagem de fundo" />
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --font-dm-sans: "DM Sans", "serif"; 
+}
+
+.input-wrapper {
+  background: transparent;
+  transition: all 0.3s ease;
+  padding: 1px;
+}
+
+.input-wrapper:focus-within {
+  background: linear-gradient(90deg, #4158D0, #C850C0, #FFCC70);
+  animation: gradient 3s ease infinite;
+  background-size: 200% auto;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+  100% {
+    background-position: 0% center;
+  }
+}
+
+@layer components {
+  .link {
+    @apply underline-offset-2 underline font-normal text-sm text-gray-400 inline-block text-right;
+  }
+  .btn {
+    @apply bg-gradient-to-tr from-[#4158D0] via-[#C850C0] to-[#FFCC70] font-bold text-white cursor-pointer rounded-xl transition-transform transform hover:scale-105 duration-300 flex justify-center items-center h-12 text-lg sm:text-2xl;
+  }
+}
